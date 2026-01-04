@@ -71,7 +71,7 @@ Use GENERATE button blow to download the zip file.Then unzip the folder into you
 
 ### 2.2.config the [application.yaml file](/demo/src/main/resources/application.yaml)
 
-### 2.3.create *[ENTITY]()|[RESPOSITORY]()|[CONTROLLER]()* files
+### 2.3.create *[ENTITY](/demo/src/main/java/com/bliu/demo/entity/User.java)|[RESPOSITORY](/demo/src/main/java/com/bliu/demo/repository/UserRepository.java)|[CONTROLLER](/demo/src/main/java/com/bliu/demo/controller/UserController.java)* files
 
 ### 2.4.run the project with gradle
 ```bash
