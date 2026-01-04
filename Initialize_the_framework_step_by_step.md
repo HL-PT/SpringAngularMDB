@@ -69,7 +69,7 @@ java -version
 
 Use GENERATE button blow to download the zip file.Then unzip the folder into your project root.
 
-### 2.2.config the [application.yaml file](/home/bliu/42/github/SpringAngularMDB/demo/src/main/resources/application.yaml)
+### 2.2.config the [application.yaml file](/demo/src/main/resources/application.yaml)
 
 ### 2.3.create *[ENTITY]()|[RESPOSITORY]()|[CONTROLLER]()* files
 
