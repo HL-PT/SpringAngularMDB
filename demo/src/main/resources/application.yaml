@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: demo
+  
+  mvc:
+    servlet:
+      path: /api
+  
+  springdoc:
+    api-docs:
+      path: /api/v3/api-docs
+    swagger-ui:
+      path: /api/swagger-ui.html
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/mariadb?useUnicode=true&characterEncoding=utf8mb4
+    username: bliu
+    password: bliu@42
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  sql:
+    init:
+      mode: always
+
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
