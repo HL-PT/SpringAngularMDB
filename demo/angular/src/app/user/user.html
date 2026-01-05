@@ -1,0 +1,8 @@
+<p>user list</p>
+<ul>
+  <li *ngFor="let user of users">
+	id:{{ user.id }} username:{{ user.username }} email:{{ user.email }}
+	<button (click)="deleteUser(user.id)">Delete</button>
+</li>
+  <button (click)="ngOnInit()">Refresh</button>
+</ul>
