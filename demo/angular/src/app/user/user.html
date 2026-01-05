@@ -1,4 +1,12 @@
 <p>user list</p>
+<button (click)="openAddUser()">ADD User</button>
+
+<app-add-user
+  *ngIf="showAddUser"
+  (close)="closeAddUser()"
+  (saved)="onUserSaved()"
+></app-add-user>
+
 <ul>
   <li *ngFor="let user of users">
 	id:{{ user.id }} username:{{ user.username }} email:{{ user.email }}

@@ -17,4 +17,8 @@ export class UserService {
   deleteUser(id: number): Observable<void> {
 	return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
+  addUser(data: { username: string; email: string }): Observable<User> {
+	console.log('Adding user:', data);
+	return this.http.post<User>(this.apiUrl, data);
+  }
 }

@@ -1,0 +1,28 @@
+<div class="overlay">
+  <div class="modal">
+    <h3>Add User</h3>
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+
+      <input
+        placeholder="Name"
+        formControlName="name"
+      />
+
+      <input
+        placeholder="Email"
+        formControlName="email"
+      />
+
+      <div class="actions">
+        <button type="submit" [disabled]="form.invalid">
+          Save
+        </button>
+        <button type="button" (click)="close.emit()">
+          Cancel
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
