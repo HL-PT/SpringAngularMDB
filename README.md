@@ -3,6 +3,8 @@
 It was originally for a test arranged by a company, but unfortunately, one of the prerequisites I received was that the applicant needed to have fluent Portuguese.
 
 ## Steps to run the application:
+### Please read and follow the steps in Initialize_the_framework_step_by_step.md, which will help you initialize your infrastructure. Afterward, clone the code and start Spring Boot and Angular sequentially. A whole new world is about to open up for you.
+
 Start the Spring Boot application in the demo directory to make the REST API available:
 ```bash
 ./gradlew bootRun
